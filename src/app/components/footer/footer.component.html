@@ -3,25 +3,19 @@
     <nav class="pull-left">
       <ul>
         <li>
-          <a href="https://www.creative-tim.com"> SaaS Management System </a>
+          <a routerList="dashboard"> SaaS Management System </a>
         </li>
         <li>
-          <a href="https://creative-tim.com/about-us"> About Us </a>
-        </li>
-        <li>
-          <a href="http://blog.creative-tim.com"> Blog </a>
-        </li>
-        <li>
-          <a href="https://www.creative-tim.com/license"> Licenses </a>
+          <a routerList="aboutus"> About Us </a>
         </li>
       </ul>
     </nav>
     <div class="copyright pull-right">
       &copy;
-      {{ test | date: "yyyy" }}, All rights are reserved with @Persistent
-      Systems
-      <!-- <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> -->
-      <!-- for a better web. -->
+      {{ test | date: "yyyy" }}, All rights are reserved with
+      <a href="https://www.persistent.com/" target="_blank"
+        >@Persistent Systems</a
+      >
     </div>
   </div>
 </footer>

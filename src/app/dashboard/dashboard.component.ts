@@ -96,8 +96,21 @@ export class DashboardComponent implements OnInit {
     /* ----------==========     Completed Tasks Chart initialization    ==========---------- */
 
     const dataCompletedTasksChart: any = {
-      labels: ["12p", "3p", "6p", "9p", "12p", "3a", "6a", "9a"],
-      series: [[230, 750, 450, 300, 280, 240, 200, 190]],
+      labels: [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ],
+      series: [[15, 17, 18, 16, 20, 22, 17, 18, 14, 17, 19, 20]],
     };
 
     const optionsCompletedTasksChart: any = {
@@ -105,7 +118,7 @@ export class DashboardComponent implements OnInit {
         tension: 0,
       }),
       low: 0,
-      high: 1000, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+      high: 30, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
       chartPadding: { top: 0, right: 0, bottom: 0, left: 0 },
     };
 
@@ -121,15 +134,28 @@ export class DashboardComponent implements OnInit {
     /* ----------==========     Emails Subscription Chart initialization    ==========---------- */
 
     var datawebsiteViewsChart = {
-      labels: ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"],
-      series: [[542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895]],
+      labels: [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ],
+      series: [[350, 370, 340, 400, 410, 402, 440, 434, 400, 350, 370, 400]],
     };
     var optionswebsiteViewsChart = {
       axisX: {
         showGrid: false,
       },
       low: 0,
-      high: 1000,
+      high: 600,
       chartPadding: { top: 0, right: 5, bottom: 0, left: 0 },
     };
     var responsiveOptions: any[] = [
