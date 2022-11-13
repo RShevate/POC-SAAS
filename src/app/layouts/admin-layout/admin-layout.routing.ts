@@ -12,6 +12,7 @@ import { UpgradeComponent } from "../../upgrade/upgrade.component";
 import { PageNotFoundComponent } from "app/components/page-not-found/page-not-found.component";
 import { SoftDashboardComponent } from "app/soft-dashboard/soft-dashboard.component";
 import { IntegrationComponent } from "app/integration/integration.component";
+import { UsersComponent } from "app/users/users.component";
 
 export const AdminLayoutRoutes: Routes = [
   // {
@@ -65,10 +66,13 @@ export const AdminLayoutRoutes: Routes = [
   { path: "notifications", component: NotificationsComponent },
   { path: "upgrade", component: UpgradeComponent },
   { path: "softwareDashboard", component: SoftDashboardComponent },
+  { path: "userdetail", component:  PageNotFoundComponent },
 
   { path: "expenses", component: PageNotFoundComponent },
   { path: "insight", component: PageNotFoundComponent },
-  { path: "user", component: PageNotFoundComponent },
+
+  { path: "user", component: UsersComponent },
+
   { path: "renewal", component: PageNotFoundComponent },
   { path: "automation", component: PageNotFoundComponent },
   { path: "security", component: PageNotFoundComponent },
