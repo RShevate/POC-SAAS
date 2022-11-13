@@ -17,27 +17,9 @@ export const ROUTES: RouteInfo[] = [
     class: "",
   },
   {
-    path: "/insight",
-    title: "Insight",
-    icon: "bar_chart",
-    class: "",
-  },
-  {
     path: "/application",
-    title: "Application",
+    title: "Applications",
     icon: "content_paste",
-    class: "",
-  },
-  {
-    path: "/licenses",
-    title: "Licenses",
-    icon: "folder",
-    class: "",
-  },
-  {
-    path: "/user",
-    title: "Users",
-    icon: "people",
     class: "",
   },
   {
@@ -47,9 +29,15 @@ export const ROUTES: RouteInfo[] = [
     class: "",
   },
   {
-    path: "/renewal",
-    title: "Renewals",
-    icon: "autorenew",
+    path: "/insight",
+    title: "Insights",
+    icon: "bar_chart",
+    class: "",
+  },
+  {
+    path: "/user",
+    title: "Users",
+    icon: "people",
     class: "",
   },
   {
@@ -57,14 +45,12 @@ export const ROUTES: RouteInfo[] = [
     title: "Automation",
     icon: "all_inclusive",
     class: "",
-    // children: [
-    //   {
-    //     path: "/",
-    //     title: "Hello",
-    //     icon: "people",
-    //     class: "",
-    //   },
-    // ]
+  },
+  {
+    path: "/renewal",
+    title: "Renewals",
+    icon: "autorenew",
+    class: "",
   },
   {
     path: "/security",
@@ -81,7 +67,7 @@ export const ROUTES: RouteInfo[] = [
 
   {
     path: "/integration",
-    title: "Integration",
+    title: "Integrations",
     icon: "add_box",
     class: "",
   },

@@ -68,7 +68,6 @@ export const AdminLayoutRoutes: Routes = [
 
   { path: "expenses", component: PageNotFoundComponent },
   { path: "insight", component: PageNotFoundComponent },
-  { path: "licenses", component: PageNotFoundComponent },
   { path: "user", component: PageNotFoundComponent },
   { path: "renewal", component: PageNotFoundComponent },
   { path: "automation", component: PageNotFoundComponent },
