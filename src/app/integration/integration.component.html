@@ -10,6 +10,7 @@
               <img
                 class="card-img-top"
                 src="./assets/img/softwarelogo/activeDirectory.png"
+                data-toggle="modal" data-target="#basicExampleModal3"
                 alt="activeDirectory logo image"
                 class="avatar"
               />
@@ -566,6 +567,81 @@
           </div>
           <div class="card-footer d-flex">
             <h4 class="title mx-auto">monday.com</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<div class="col-md-4 clearfix  d-md-block">
+  <div class="card mb-2">
+    <div class="card-body">
+      <div class="modal fade" id="basicExampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel3">Slack Configuration</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body ">
+              <form>
+                <div class="form1">
+                    <div class="form-group">
+                        <label for="Admin Username" class="form-label">Admin Username:</label>
+                        <input type="text" required class="form-control" maxLength="60" id="adminUsername" placeholder="Enter Admin Username" formControlName="adminUsername" >
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="Admin Password" class="form-label">Admin Password:</label>
+                        <input type="password" required class="form-control"  maxLength="255" id="adminPassword" placeholder="Enter Admin Password" formControlName="adminPassword">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="URL" class="form-label">URL:</label>
+                      <input type="text" required class="form-control"  maxLength="255" id="url" placeholder="Add URL" formControlName="url">
+                  </div>
+                </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#basicExampleModal2" data-dismiss="modal">Save</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<div class="col-md-4 clearfix  d-md-block">
+  <div class="card mb-2">
+    <div class="card-body">
+      <div class="modal fade" id="basicExampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-body ">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <p>User Saved</p>
+              <div class="text-right">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
