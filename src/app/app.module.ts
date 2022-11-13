@@ -8,6 +8,7 @@ import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { SoftDashboardComponent } from './soft-dashboard/soft-dashboard.component';
+import { IntegrationComponent } from './integration/integration.component';
 
 @NgModule({
   imports: [
@@ -23,6 +24,7 @@ import { SoftDashboardComponent } from './soft-dashboard/soft-dashboard.componen
     AppComponent,
     AdminLayoutComponent,
     SoftDashboardComponent,
+    IntegrationComponent,
 
   ],
   providers: [],

@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { AccountService } from "app/services/account.service";
+import { Observable } from "rxjs";
 
 declare const $: any;
 declare interface RouteInfo {
@@ -78,7 +80,7 @@ export const ROUTES: RouteInfo[] = [
   },
 
   {
-    path: "/maps",
+    path: "/integration",
     title: "Integration",
     icon: "add_box",
     class: "",
@@ -106,9 +108,16 @@ export const ROUTES: RouteInfo[] = [
 export class SidebarComponent implements OnInit {
   menuItems: any[];
 
-  constructor() {}
+  constructor(private acc: AccountService) {}
+
+  loginStatus: Observable<boolean>;
+
+  UserName$: Observable<string>;
 
   ngOnInit() {
+    this.loginStatus = this.acc.isLoggedIn;
+    this.UserName$ = this.acc.CurrentUserName;
+
     this.menuItems = ROUTES.filter((menuItem) => menuItem);
   }
   isMobileMenu() {
