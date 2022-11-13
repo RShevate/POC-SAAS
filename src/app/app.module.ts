@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { SoftDashboardComponent } from './soft-dashboard/soft-dashboard.component';
 import { IntegrationComponent } from './integration/integration.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   imports: [
@@ -25,6 +26,7 @@ import { IntegrationComponent } from './integration/integration.component';
     AdminLayoutComponent,
     SoftDashboardComponent,
     IntegrationComponent,
+    UsersComponent,
 
   ],
   providers: [],
