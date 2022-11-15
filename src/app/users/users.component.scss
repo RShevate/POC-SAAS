@@ -3,3 +3,26 @@
 //     background-color: white;
 //     // color:blue;
 // }
+
+.card-header {
+  background-color: #65b360;
+}
+.card-title {
+  color: white;
+  font-weight: bold;
+}
+
+.search {
+  left: 85%;
+  width: 10%;
+  position: absolute;
+}
+
+::placeholder {
+  color: white;
+}
+
+.search-button {
+  left: 80%;
+  height: 36px;
+}

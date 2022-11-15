@@ -71,46 +71,51 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
     /* ----------==========     Daily Sales Chart initialization For Documentation    ==========---------- */
 
-    const dataDailySalesChart: any = {
-      labels: ["M", "T", "W", "T", "F", "S", "S"],
-      series: [[12, 17, 7, 17, 23, 18, 38]],
-    };
+    // const dataDailySalesChart: any = {
+    //   labels: ["M", "T", "W", "T", "F", "S", "S"],
+    //   series: [[12, 17, 7, 17, 23, 18, 38]],
+    // };
 
-    const optionsDailySalesChart: any = {
-      lineSmooth: Chartist.Interpolation.cardinal({
-        tension: 0,
-      }),
-      low: 0,
-      high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
-      chartPadding: { top: 0, right: 0, bottom: 0, left: 0 },
-    };
+    // const optionsDailySalesChart: any = {
+    //   lineSmooth: Chartist.Interpolation.cardinal({
+    //     tension: 0,
+    //   }),
+    //   low: 0,
+    //   high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+    //   chartPadding: { top: 0, right: 0, bottom: 0, left: 0 },
+    // };
 
-    var dailySalesChart = new Chartist.Line(
-      "#dailySalesChart",
-      dataDailySalesChart,
-      optionsDailySalesChart
-    );
+    // var dailySalesChart = new Chartist.Line(
+    //   "#dailySalesChart",
+    //   dataDailySalesChart,
+    //   optionsDailySalesChart
+    // );
 
-    this.startAnimationForLineChart(dailySalesChart);
+    // this.startAnimationForLineChart(dailySalesChart);
 
     /* ----------==========     Completed Tasks Chart initialization    ==========---------- */
 
     const dataCompletedTasksChart: any = {
       labels: [
-        "Jan",
-        "Feb",
-        "Mar",
-        "Apr",
-        "May",
-        "Jun",
-        "Jul",
-        "Aug",
-        "Sep",
-        "Oct",
-        "Nov",
-        "Dec",
+        "Dec'21",
+        "",
+        "",
+        "Mar'22",
+        "",
+        "",
+        "Jun'22",
+        "",
+        "",
+        "Sep'22",
+        "",
+        "",
       ],
-      series: [[15, 17, 18, 16, 20, 22, 17, 18, 14, 17, 19, 20]],
+      series: [
+        [
+          20500, 21500, 23500, 24500, 24800, 25500, 26500, 28500, 28900, 30500,
+          31500, 32500,
+        ],
+      ],
     };
 
     const optionsCompletedTasksChart: any = {
@@ -118,8 +123,8 @@ export class DashboardComponent implements OnInit {
         tension: 0,
       }),
       low: 0,
-      high: 30, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
-      chartPadding: { top: 0, right: 0, bottom: 0, left: 0 },
+      high: 50000, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+      chartPadding: { top: 0, right: 0, bottom: 0, left: 10 },
     };
 
     var completedTasksChart = new Chartist.Line(
@@ -135,18 +140,18 @@ export class DashboardComponent implements OnInit {
 
     var datawebsiteViewsChart = {
       labels: [
-        "Jan",
-        "Feb",
-        "Mar",
-        "Apr",
-        "May",
-        "Jun",
-        "Jul",
-        "Aug",
-        "Sep",
-        "Oct",
-        "Nov",
-        "Dec",
+        "Dec'21",
+        "",
+        "",
+        "Mar'22",
+        "",
+        "",
+        "Jun'22",
+        "",
+        "",
+        "Sep'22",
+        "",
+        "",
       ],
       series: [[350, 370, 340, 400, 410, 402, 440, 434, 400, 350, 370, 400]],
     };
