@@ -66,7 +66,7 @@ export const AdminLayoutRoutes: Routes = [
   { path: "notifications", component: NotificationsComponent },
   { path: "upgrade", component: UpgradeComponent },
   { path: "softwareDashboard", component: SoftDashboardComponent },
-  { path: "userdetail", component:  PageNotFoundComponent },
+  { path: "userdetail", component: PageNotFoundComponent },
 
   { path: "expenses", component: PageNotFoundComponent },
   { path: "insight", component: PageNotFoundComponent },

@@ -1,0 +1,27 @@
+.card-header {
+  background-color: #65b360;
+}
+.card-title {
+  color: white;
+  font-weight: bold;
+}
+
+.search {
+  left: 85%;
+  width: 10%;
+  position: absolute;
+}
+
+::placeholder {
+  color: white;
+}
+
+.search-button1 {
+  left: 68%;
+  height: 36px;
+}
+
+.search-button2 {
+  left: 65%;
+  height: 36px;
+}
